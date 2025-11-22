@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+// this actually is what happens after the client enters their username
 func PrintClientHelp() {
 	fmt.Println("Possible commands:")
 	fmt.Println("* move <location> <unitID> <unitID> <unitID>...")
@@ -25,6 +26,7 @@ func PrintClientHelp() {
 	fmt.Println("* help")
 }
 
+// Logical conclusion is that ClientWelcome is what is going to happen on start up
 func ClientWelcome() (string, error) {
 	fmt.Println("Welcome to the Peril client!")
 	fmt.Println("Please enter your username:")
